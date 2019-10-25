@@ -1,5 +1,5 @@
 ---
-name: basic-network
+name: battery-network
 version: 1.0.0
 client:
     organization: Org1
@@ -11,31 +11,31 @@ client:
 channels:
     mychannel:
         orderers:
-        - orderer.example.com
+        - orderer.battery.com
         peers:
-            peer0.org1.example.com: {}
+            peer0.org1.battery.com: {}
 organizations:
     Org1:
         mspid: Org1MSP
         peers:
-        - peer0.org1.example.com
+        - peer0.org1.battery.com
         certificateAuthorities:
-        - ca.example.com
+        - ca.battery.com
     Org2:
         mspid: Org1MSP
         peers:
-        - peer0.org2.example.com
+        - peer0.org2.battery.com
         certificateAuthorities:
-        - ca.example.com
+        - ca.battery.com
 orderers:
-    orderer.example.com:
+    orderer.battery.com:
         url: grpc://localhost:7050
 peers:
-    peer0.org1.example.com:
+    peer0.org1.battery.com:
         url: grpc://localhost:7051
-    peer0.org2.example.com:
+    peer0.org2.battery.com:
         url: grpc://localhost:7052
 certificateAuthorities:
-    ca.example.com:
+    ca.battery.com:
         url: http://localhost:7054
-        caName: ca.example.com
+        caName: ca.battery.com
