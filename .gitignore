@@ -1,0 +1,9 @@
+.vscode/
+network/config
+network/crypto-config
+network_basic/config
+network_basic/crypto-config
+application/node_modules
+application/sessions
+application/wallet/*
+node_modules
