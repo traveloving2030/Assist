@@ -22,7 +22,7 @@ organizations:
         certificateAuthorities:
         - ca.battery.com
     Org2:
-        mspid: Org1MSP
+        mspid: Org2MSP
         peers:
         - peer0.org2.battery.com
         certificateAuthorities:
@@ -34,7 +34,7 @@ peers:
     peer0.org1.battery.com:
         url: grpc://localhost:7051
     peer0.org2.battery.com:
-        url: grpc://localhost:7052
+        url: grpc://localhost:7051
 certificateAuthorities:
     ca.battery.com:
         url: http://localhost:7054

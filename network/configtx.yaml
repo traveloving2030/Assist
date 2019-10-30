@@ -50,7 +50,8 @@ Organizations:
         MSPDir: crypto-config/peerOrganizations/org2.battery.com/msp
         AnchorPeers:
             - Host: peer0.org2.battery.com
-              Port: 7052
+              Port: 7051
+
 
 
 ################################################################################
