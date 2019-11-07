@@ -51,6 +51,3 @@ sleep 5
 # Join peer0.org2.battery.com to the channel.
 docker exec -e "CORE_PEER_LOCALMSPID=Org2MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org2.battery.com/msp" peer0.org2.battery.com peer channel join -b /etc/hyperledger/configtx/battery.block
 sleep 5
-# Join peer0.org2.battery.com to the channel.
-# docker exec -e "CORE_PEER_LOCALMSPID=Org3MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org3.battery.com/msp" peer0.org3.battery.com peer channel join -b /etc/hyperledger/configtx/battery.block
-# sleep 5

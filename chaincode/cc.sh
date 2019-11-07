@@ -12,6 +12,8 @@ docker exec cli peer chaincode instantiate -o orderer.battery.com:7050 -C batter
 #--tls --cafile $ORDERER_CA 
 
 export MARBLE=$(echo -n "{\"name\":\"marble1\",\"color\":\"blue\",\"size\":35,\"owner\":\"tom\",\"price\":99}" | base64 | tr -d \\n)
+
+export MARBLE=$(echo -n "{\"name\":\"marble2\",\"color\":\"blue\",\"size\":35,\"owner\":\"tom\",\"price\":99}" | base64 | tr -d \\n)
 docker exec cli peer chaincode invoke -o orderer.battery.com:7050 -C battery -n elca -c '{"Args":["initMarble"]}'  --transient "{\"marble\":\"$MARBLE\"}"
 
 docker exec cli peer chaincode query -C battery -n elca -c '{"Args":["readMarble","marble1"]}'

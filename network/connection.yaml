@@ -9,7 +9,7 @@ client:
                 endorser: '300'
             orderer: '300'
 channels:
-    mychannel:
+    battery:
         orderers:
         - orderer.battery.com
         peers:

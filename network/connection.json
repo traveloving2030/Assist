@@ -13,7 +13,7 @@
         }
     },
     "channels": {
-        "mychannel": {
+        "battery": {
             "orderers": [
                 "orderer.battery.com"
             ],

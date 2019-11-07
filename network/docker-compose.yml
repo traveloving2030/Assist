@@ -15,7 +15,7 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.battery.com
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.battery.com-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/e76c94787ea33c98be4965babd9f9febca80bce3338a862501c926c458d3e559_sk
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/1e242bb79336f79abcd442011758444cc28306ee26f3507c91d31a74c54c3d92_sk
     ports:
       - "7054:7054"
     command: sh -c 'fabric-ca-server start -b admin:adminpw'
@@ -180,7 +180,7 @@ services:
     command: /bin/bash
     volumes:
         - /var/run/:/host/var/run/
-        - ./../contract/:/opt/gopath/src/github.com/
+        - ./../chaincode/:/opt/gopath/src/github.com/
         - ./crypto-config:/etc/hyperledger/crypto
         - ./config:/etc/hyperledger/configtx
     networks:
